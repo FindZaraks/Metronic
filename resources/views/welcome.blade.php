@@ -199,7 +199,7 @@ License: For each use you must have a valid license purchased only from above li
                 <!--begin::Wrapper-->
                 <div class="w-lg-650px w-xl-700px p-10 p-lg-15 mx-auto">
                     <!--begin::Form-->
-                    <form class="my-auto pb-5" novalidate="novalidate" id="kt_create_account_form" action="{{route('signup')}}" method="post">
+                    <form class="my-auto pb-5" novalidate="novalidate" id="kt_create_account_form" action="{{route('signup')}}" method="post">{{csrf_field()}}
 
                         <!--begin::Step 1-->
                         <div class="current" data-kt-stepper-element="content">
